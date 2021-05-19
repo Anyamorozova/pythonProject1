@@ -41,4 +41,19 @@
 # print(big_number)
 # ______________________________
 
-
+# print("Введите значение выручки фирмы: ")
+# proceeds = int(input())
+# print("Введите значение издержек фирмы: ")
+# costs = int(input())
+# if costs > proceeds:
+#     print("К сожалению у вашей фирмы убыток.")
+# else:
+#     print("Поздравляем, у вашей фирмы прибыль!")
+#     profit = proceeds - costs
+#     ren_proceeds = profit/proceeds
+#     print("Рентабельность выручки: {}".format(ren_proceeds))
+#     print("Укажите количество сотрудников: ")
+#     staff = int(input())
+#     profit_staff = profit//staff
+#     print("Прибыль фирмы в расчете на одного сотрудника: {}".format(profit_staff))
+# ______________________
