@@ -38,7 +38,7 @@
 #         big_number = int(number) % 10
 #     len_num = len_num - 1
 #     number = number[:-1]
-# print(big_number)
+# print("Наибольшая цифра в числе - {}".format(big_number))
 # ______________________________
 
 # print("Введите значение выручки фирмы: ")
@@ -57,3 +57,14 @@
 #     profit_staff = profit//staff
 #     print("Прибыль фирмы в расчете на одного сотрудника: {}".format(profit_staff))
 # ______________________
+
+# print("Введите количество километров, которые спортсмен пробежал в первый день: ")
+# km_first_day = int(input())
+# print("Введите количество километров, которые спортсмен должен достигнуть: ")
+# km_total = int(input())
+# day = 1
+# while km_first_day < km_total:
+#   day += 1
+#   temp = km_first_day * 0.1
+#   km_first_day = km_first_day + temp
+# print(day)
