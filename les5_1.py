@@ -1,4 +1,4 @@
-file = open("my_file.txt", 'w')
+file = open("my_file_1.txt", 'w')
 
 def write_to_file(file, str_):
     file.write(str_)
