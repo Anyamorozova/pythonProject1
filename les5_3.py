@@ -1,4 +1,4 @@
-file = open("my_file.txt", "r")
+file = open("my_file_3.txt", "r")
 content = file.read()
 file.close()
 
