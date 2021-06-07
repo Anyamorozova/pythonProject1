@@ -1,0 +1,4 @@
+Morozova 20000
+Ivanov 17000
+Petrov 24000
+Sidorov 8000
