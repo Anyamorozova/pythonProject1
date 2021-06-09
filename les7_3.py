@@ -25,7 +25,7 @@ class Cell:
       
     def make_order(self, number_cell_row):
       str_, i, arg = "", self.count_cell // number_cell_row, self.count_cell % number_cell_row
-      while(i>0):
+      while(i > 0):
         for _ in range(number_cell_row):
           str_ += "*"
         str_ += r"\n"
