@@ -33,6 +33,8 @@ class Cell:
       if arg != 0:
         for _ in range(arg):
           str_ += "*"
+      else:
+        str_ = str_[:-2]
       return str_ 
       
 cell_1 = Cell(3)
