@@ -73,6 +73,7 @@ while True:
   warehouse = Warehouse()
   if input('Выход - stop, \nЛюбая клавиша - продолжить.').lower() == 'stop':
     break
+    
   int_data = input('Введите, в соответствии с обозначениями, через пробел, что привезли на склад и в каком количестве. \n Обозначения: S - сканер, P - принтер, X - ксерокс \n')
   try:
     if len(int_data) < 3:
@@ -84,12 +85,11 @@ while True:
   except My_exception as err:
     print(err)
   else:
-    if int_data[0].upper() == 'S':
-      warehouse.intput_equipment("Scanner", int_data[1])
-    elif int_data[0].upper() == 'P':
-      warehouse.intput_equipment("Printer", int_data[1])
-    elif int_data[0].upper() == 'X':
-      warehouse.intput_equipment("Xerox", int_data[1])
+    dict_ = {"S":"Scanner", "P":"Printer", "X": "Xerox"}
+    for i, el in dict_.items():
+      if int_data[0].upper() == i: 
+        warehouse.intput_equipment(el, int_data[1])
+        break
     else:
       print("Нет такого обозначения.")
     print(f" Оргтехника на складе: {warehouse.dict_equipment}")
